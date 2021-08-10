@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".seller.Update_group"
+    android:padding="5dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar_update_group"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="2dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+
+
+    <EditText
+        android:id="@+id/editText_update_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/imageView_update_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/button1_update_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تغيير الصورة"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginVertical="5dp"
+        android:onClick="select_image"
+        />
+
+    <Button
+        android:id="@+id/button2_update_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تحديث البيانات"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:onClick="update"
+        />
+</LinearLayout>
